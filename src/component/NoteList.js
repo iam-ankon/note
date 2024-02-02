@@ -7,6 +7,7 @@ const NoteList = ({ notes, handleAddNote, handleDeleteNote }) => {
     <div className="note-list">
       {notes.map((note) => (
         <Note
+        key={note.id}
         id={note.id}
         text={note.text}
         date={note.date}
